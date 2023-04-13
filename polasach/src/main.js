@@ -8,7 +8,7 @@ Vue.use(SocialSharing);
 Vue.use(VueGoogleMaps, {
   load: {
     key: 'AIzaSyDdbvUUGfTHsbUB-sChAJfqQB2EiEXQV-Q', 
-    libraries: 'places',
+    libraries: 'maps',
   },
 });
 
