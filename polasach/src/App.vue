@@ -1,15 +1,18 @@
 <template>
   <div id="app">
-    <PolasachMap />
+    <!-- <PolasachMap /> -->
+    <LasyIframe />
   </div>
 </template>
 
 <script>
-import PolasachMap from './components/PolasachMap.vue';
+import LasyIframe from './components/LasyIframe.vue';
+//import PolasachMap from './components/PolasachMap.vue';
 
 export default {
   components: {
-    PolasachMap,
+  //  PolasachMap,
+    LasyIframe,
   },
 };
 </script>
