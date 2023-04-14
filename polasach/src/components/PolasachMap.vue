@@ -50,6 +50,7 @@ methods: {
           lat: position.coords.latitude,
           lng: position.coords.longitude,
         };
+
       });
     } else {
       alert('Geolocation is not supported by this browser.');
@@ -66,7 +67,7 @@ methods: {
     this.markers[index].showInfo = !this.markers[index].showInfo;
   },
   boundsChanged() {
-    // Fetch and display relevant information based on the visible area of the map.
+    // Fetch s and display relevant information based on the visible area of the map.
     // You can use the Google Maps API to query for data within the visible bounds.
   },
 },

@@ -7,6 +7,10 @@
       @load="iframeLoaded"
       width="100%"
       height="1000px"
+      style="
+      width:100vw;
+      height:100vh;
+      "
     ></iframe>
     <!-- Other content -->
   </div>
