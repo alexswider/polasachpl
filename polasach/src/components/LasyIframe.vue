@@ -7,10 +7,7 @@
       @load="iframeLoaded"
       width="100%"
       height="1000px"
-      style="
-      width:100vw;
-      height:100vh;
-      "
+      style="width: 100vw; height: 100vh"
     ></iframe>
     <!-- Other content -->
   </div>
@@ -26,21 +23,15 @@ export default {
     trackPageView() {
       const pageTitle = "maps"; // Replace with your actual page title
 
-    
       this.$gtag.pageview({
         page_path: "/",
         page_title: pageTitle,
       });
 
-      console.log("iframeLoaded")
+      console.log("iframeLoaded");
     },
-    iframeLoaded() {
-      
-    }
-  }
-  
-  
+    iframeLoaded() {},
+  },
 };
-
 </script>
   

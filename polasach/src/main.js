@@ -5,6 +5,9 @@ import SocialSharing from 'vue-social-sharing';
 import './assets/styles.scss'; // For SCSS
 import VueGtag from "vue-gtag";
 
+
+Vue.config.productionTip = false
+
 Vue.use(SocialSharing);
 
 Vue.use(VueGoogleMaps, {
@@ -22,7 +25,6 @@ Vue.use(VueGtag, {
 });
   
 
-Vue.config.productionTip = false
 
 new Vue({
   render: h => h(App),

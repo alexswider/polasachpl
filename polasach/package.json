@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "html2canvas": "^1.4.1",
     "vue": "^2.6.14",
     "vue-gtag": "^1.16.1",
     "vue-social-sharing": "^3.0.9",
