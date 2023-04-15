@@ -18,33 +18,28 @@
 
   <script>
 export default {
-  methods: {
-    iframeLoaded() {
-      // Access the iframe's contentWindow and document
-     // const iframeWindow = this.$refs.myIframe.contentWindow;
-      const iframeDocument = this.$refs.myIframe.contentDocument;
-
-      // Find the button inside the iframe (assuming it has an ID)
-      const button = iframeDocument.getElementById("your-button-id");
-
-      // Click the button
-      if (button) {
-        button.click();
-      } else {
-        console.error("Button not found");
-      }
-    },
-    onload(){
-       this.$gtm.trackEvent({
-        event: null, // Event type [default = 'interaction'] (Optional)
-        category: "Iframe",
-        action: "load",
-        label: "Loaded",
-        value: 5000,
-        noninteraction: false, // Optional
-      }); 
-    }
+  name: "LasyIframe",
+  mounted() {
+    this.trackPageView();
   },
+  methods: {
+    trackPageView() {
+      const pageTitle = "maps"; // Replace with your actual page title
+
+    
+      this.$gtag.pageview({
+        page_path: "/",
+        page_title: pageTitle,
+      });
+
+      console.log("iframeLoaded")
+    },
+    iframeLoaded() {
+      
+    }
+  }
+  
+  
 };
 
 </script>
