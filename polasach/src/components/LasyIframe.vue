@@ -36,5 +36,10 @@ export default {
     },
   },
 };
+this.$gtag.event("your_event_name", {
+  event_category: "Category",
+  event_label: "Label",
+  value: 123,
+});
 </script>
   
