@@ -34,12 +34,18 @@ export default {
         console.error("Button not found");
       }
     },
+    onload(){
+       this.$gtm.trackEvent({
+        event: null, // Event type [default = 'interaction'] (Optional)
+        category: "Iframe",
+        action: "load",
+        label: "Loaded",
+        value: 5000,
+        noninteraction: false, // Optional
+      }); 
+    }
   },
 };
-this.$gtag.event("your_event_name", {
-  event_category: "Category",
-  event_label: "Label",
-  value: 123,
-});
+
 </script>
   
