@@ -2,6 +2,7 @@
   <div id="app">
     <!-- <PolasachMap /> -->
     <LasyIframe />
+    <top-navbar></top-navbar>
     <bottom-navbar @share="shareOnTwitter"></bottom-navbar>
   </div>
 </template>
@@ -9,6 +10,7 @@
 <script>
 import LasyIframe from "./components/LasyIframe.vue";
 import BottomNavbar from "@/components/BottomNavbar.vue";
+import TopNavbar from "@/components/TopNavbar.vue";
 import html2canvas from "html2canvas";
 import axios from "axios";
 
@@ -19,10 +21,12 @@ export default {
     //  PolasachMap,
     LasyIframe,
     BottomNavbar,
+    TopNavbar
   },
   methods: {
     async shareOnTwitter() {
-      const targetDiv = document.getElementById("target-div"); // Replace 'target-div' with your div's ID
+      console.log('hareontwitter');
+      const targetDiv = document.getElementById("app").children[0]; // Replace 'target-div' with your div's ID
 
       // Capture the div as a canvas
       const canvas = await html2canvas(targetDiv);

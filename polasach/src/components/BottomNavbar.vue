@@ -1,8 +1,9 @@
 <template>
   <div class="bottom-navbar">
-    <button class="nav-button" @click="$emit('share')">Share on twitter</button>
-    <button class="nav-button">Button 2</button>
-    <button class="nav-button">Button 3</button>
+    <!-- <button class="nav-button" @click="$emit('share')">Share on twitter</button> -->
+    <!-- <button class="nav-button">Button 2</button> -->
+    <button class="nav-button">PoLasach.pl</button>
+
   </div>
 </template>
 
@@ -15,16 +16,16 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 60px;
-  background-color: #333;
+  height: 30px;
+  background-color: white;
   z-index: 100;
 }
 
 .nav-button {
-  color: #fff;
+  color: black;
   background-color: transparent;
   border: none;
-  font-size: 16px;
+  font-size: 12px;
   cursor: pointer;
 }
 
