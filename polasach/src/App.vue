@@ -12,7 +12,7 @@ import LasyIframe from "./components/LasyIframe.vue";
 import BottomNavbar from "@/components/BottomNavbar.vue";
 import TopNavbar from "@/components/TopNavbar.vue";
 //import html2canvas from "html2canvas";
-import axios from "axios";
+//import axios from "axios";
 
 //import PolasachMap from './components/PolasachMap.vue';
 
@@ -35,26 +35,24 @@ export default {
      // const imageURL = canvas.toDataURL("image/png");
 
       // Upload the image using the ImgBB API
-      const imgBBApiKey = "e2f72ed5e8a19f997874f96cc2dab2e3"; // Replace with your ImgBB API Key
-      const apiEndpoint = "https://api.imgbb.com/1/upload";
+      // const imgBBApiKey = "e2f72ed5e8a19f997874f96cc2dab2e3"; // Replace with your ImgBB API Key
+      // const apiEndpoint = "https://api.imgbb.com/1/upload";
 
-      const formData = new FormData();
-      formData.append("image", "https://polasach.pl/images/logo.png"); //imageURL.split("base64,")[1]);
-      formData.append("key", imgBBApiKey);
+      // const formData = new FormData();
+      // formData.append("image", "https://polasach.pl/images/logo.png"); //imageURL.split("base64,")[1]);
+      // formData.append("key", imgBBApiKey);
 
-      const response = await axios.post(apiEndpoint, formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-      });
+      // const response = await axios.post(apiEndpoint, formData, {
+      //   headers: {
+      //     "Content-Type": "multipart/form-data",
+      //   },
+      // });
 
       // Get the image link from the API response
-      const imageLink = response.data.data.url;
+      //const imageLink = response.data.data.url;
 
       // Compose the Twitter share URL
-      const twitterShareURL = `https://twitter.com/intent/tweet?url=${encodeURIComponent(
-        imageLink
-      )}`;
+      const twitterShareURL = `https://twitter.com/intent/tweet?url=https://Polasach.pl`;
 
       // Open the Twitter share URL in a new window
       window.open(twitterShareURL, "_blank");

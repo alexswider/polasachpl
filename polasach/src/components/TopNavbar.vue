@@ -14,10 +14,12 @@
   left: 0;
   width: 70px;
   height: 70px;
-  background-color: #333;
   z-index: 101;
+  background: none;
   
 }
+
+
 .top-navbar button img{
 width: 100%;
 scale: auto;
@@ -26,7 +28,7 @@ margin: 0;
 .top-navbar button{
 width: 100%;
 margin: 0;
-background-color: black;
+border:none;
 }
 
 
